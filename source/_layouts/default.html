@@ -1,0 +1,42 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body>
+	{% include header.html %}
+
+	<!-- container --> 
+	<div id="container" class="constrain"> 
+		
+		<!-- header -->
+		<header class="clearfix">
+		
+			<!-- logo -->
+			<h1><a href="#" title="jQuery">jQuery</a></h1>
+			<!-- /logo -->
+			
+			<!-- ads or events -->
+			<aside></aside>
+			<!-- /ads  or events -->
+			
+			<!-- secondary nav -->
+			<nav class="clearfix">
+				{% include navigation.html %}
+				{% include search.html %}
+			</nav>
+			<!-- /secondary nav -->
+
+		</header>
+		<!-- /header -->
+		
+		<!-- body -->
+		<div id="body" class="clearfix{% if page.sidebar == true %} sidebar-right{% endif %}">
+			{{ content | expand_urls: root_url }}
+		</div>
+		<!-- /body -->
+
+	</div>
+	<!-- /container -->
+
+	{% include footer.html %}
+	{% include scripts.html %}
+</body> 
+</html>

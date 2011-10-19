@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- inner -->
+<div class="inner">
+	<h2 class="title">{{ page.title | titlecase }}</h2>
+	{{ content }}
+</div>
+<!-- /inner -->
+
+{% if page.sidebar == true %}
+<!-- sidebar -->
+<aside id="sidebar" class="clearfix autoHeight">
+	{% if site.page_asides.size %}
+		{% include_array page_asides %}
+	{% else %}
+		{% include_array default_asides %}
+	{% endif %}
+	{% include sidebar.html %}
+</aside>
+<!-- /sidebar -->
+{% endif %}
