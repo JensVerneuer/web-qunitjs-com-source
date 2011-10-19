@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/web-qunitjs-com/"
+http_images_path = "/web-qunitjs-com/images"
+http_fonts_path = "/web-qunitjs-com/fonts"
+css_dir = "public/web-qunitjs-com/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
