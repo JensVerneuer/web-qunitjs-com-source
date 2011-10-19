@@ -1,12 +1,12 @@
 {% capture current_page %}{{ page.url | remove:'/index.html' }}{% endcapture %}
 <ul>
 	
-	<li{% if current_page == '' %} class="active"{% endif %}><a href="/" title="Overview">Overview</a></li>
+	<li{% if current_page == '' %} class="active"{% endif %}><a href="{{ root_url }}" title="Overview">Overview</a></li>
 	{% comment %}
 	<li><a href="#" title="Plugins">Plugins</a></li>
 	<li><a href="#" title="API">API</a></li>
 	{% endcomment %}
-	<li{% if current_page == '/documentation' %} class="active"{% endif %}><a href="/documentation" title="Documentation">Documentation</a></li>
-	<li{% if current_page == '/development' %} class="active"{% endif %}><a href="/development" title="Development">Development</a></li>
-	<li{% if current_page == '/download' %} class="active"{% endif %}><a href="/download" title="Download">Download</a></li>
+	<li{% if current_page == '/documentation' %} class="active"{% endif %}><a href="{{ root_url }}/documentation" title="Documentation">Documentation</a></li>
+	<li{% if current_page == '/development' %} class="active"{% endif %}><a href="{{ root_url }}/development" title="Development">Development</a></li>
+	<li{% if current_page == '/download' %} class="active"{% endif %}><a href="{{ root_url }}/download" title="Download">Download</a></li>
 </ul>
