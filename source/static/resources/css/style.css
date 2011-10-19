@@ -234,7 +234,7 @@ pre, .syntaxhighlighter {
 }
 
 iframe {
-  border: 1px solid #bfbfbf;
+  border: 0;
   padding: 1px;
 }
 
