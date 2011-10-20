@@ -2,14 +2,14 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://jquery.github.com/web-qunitjs-com
+url: http://qunitjs.com
 title: QUnit
 subtitle: A JavaScript Unit Testing framework.
 author: QUnit Team
 simple_search: http://google.com/search
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /web-qunitjs-com/atom.xml
+subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -19,10 +19,10 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /web-qunitjs-com
+root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public/web-qunitjs-com
+destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
@@ -80,6 +80,6 @@ disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id:
-   
+
 # Facebook Like
-facebook_like: true   
+facebook_like: true
