@@ -15,4 +15,8 @@
 <script src="{{ root_url }}/static/resources/js/plugins/app.base.js"></script>
 <script src="{{ root_url }}/static/resources/js/plugins.js"></script>
 <script src="{{ root_url }}/static/resources/js/scripts.js"></script>
+
+{% if page.url contains '/blog' and site.twitter_tweet_button %}
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+{% endif %}
 <!-- /scripts -->
